@@ -1,18 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoology Schmoology Arcade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0b0b12;
+            color: #00ffcc;
+            font-family: 'Share Tech Mono', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            color: #ff007f;
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+            text-align: center;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #a0a0c0;
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .game-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 380px;
+        }
+
+        .game-card {
+            display: block;
+            padding: 14px 20px;
+            background: #161625;
+            color: #00e5ff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 2px solid #00e5ff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .game-card:hover {
+            background: #00e5ff;
+            color: #0b0b12;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.8);
+            transform: scale(1.03);
+        }
+    </style>
 </head>
 <body>
-    <h1>Zoology Schmoology Arcade</h1>
-    <p>Learn to identify various species the fun way through a retro arcade experience!</p>
-    
-    <ul>
-        <li><a href="C-SLUG.html">C-SLUG</a></li>
-        <li><a href="frogmouth_beta.version.html">Frogmouth</a></li>
-        <li><a href="raraavis2.0.html">Rara Avis</a></li>
-        <li><a href="spiderfreak.html">Spider Freak</a></li>
-        <li><a href="stickwalkers.html">Stick Walkers</a></li>
-    </ul>
+
+    <h1>ZOOLOGY SCHMOOLOGY</h1>
+    <p>Select a game to start playing</p>
+
+    <div class="game-grid">
+        <a href="C-SLUG.html" class="game-card">C-SLUG</a>
+        <a href="frogmouth_beta.version.html" class="game-card">Frogmouth</a>
+        <a href="raraavis2.0.html" class="game-card">Rara Avis</a>
+        <a href="spiderfreak.html" class="game-card">Spider Freak</a>
+        <a href="stickwalkers.html" class="game-card">Stick Walkers</a>
+    </div>
+
 </body>
 </html>
