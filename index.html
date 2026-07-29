@@ -38,47 +38,58 @@
         }
 
         .game-grid {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 15px;
             width: 100%;
-            max-width: 380px;
+            max-width: 1000px;
         }
 
         .game-card {
-            display: block;
-            padding: 14px 20px;
-            background: #161625;
-            color: #00e5ff;
-            text-decoration: none;
-            text-align: center;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border: 2px solid #00e5ff;
+            background: #14142b;
+            border: 2px solid #00ffcc;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+            padding: 15px;
+            text-decoration: none;
+            color: #00ffcc;
+            text-align: center;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.75rem;
+            line-height: 1.4;
             transition: all 0.2s ease-in-out;
+            box-shadow: 0 0 8px rgba(0, 255, 204, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60px;
         }
 
         .game-card:hover {
-            background: #00e5ff;
+            background: #00ffcc;
             color: #0b0b12;
-            box-shadow: 0 0 20px rgba(0, 229, 255, 0.8);
-            transform: scale(1.03);
+            box-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
+            transform: translateY(-3px);
         }
     </style>
 </head>
 <body>
 
-    <h1>ZOOLOGY SCHMOOLOGY</h1>
-    <p>Select a game to start playing</p>
+    <h1>ZOOLOGY SCHMOOLOGY ARCADE</h1>
+    <p>Choose a game module below to test your identification skills!</p>
 
     <div class="game-grid">
+        <a href="bats_spotting.html" class="game-card">Bats Spotting</a>
+        <a href="butterfly_id.html" class="game-card">Butterfly ID</a>
         <a href="C-SLUG.html" class="game-card">C-SLUG</a>
-        <a href="frogmouth_beta.version.html" class="game-card">Frogmouth</a>
-        <a href="raraavis2.0.html" class="game-card">Rara Avis</a>
+        <a href="fox_spotting.html" class="game-card">Fox Spotting</a>
+        <a href="frogmouth_beta.version.html" class="game-card">Frogmouth (Beta)</a>
+        <a href="moth_id.html" class="game-card">Moth ID</a>
+        <a href="raraavis2.0.html" class="game-card">Rara Avis 2.0</a>
+        <a href="rays_spotting.html" class="game-card">Rays Spotting</a>
         <a href="spiderfreak.html" class="game-card">Spider Freak</a>
-        <a href="stickwalkers.html" class="game-card">Stick Walkers</a>
+        <a href="starfish_spotting.html" class="game-card">Starfish Spotting</a>
+        <a href="stickwalkers.html" class="game-card">Stickwalkers</a>
+        <a href="turtles_id.html" class="game-card">Turtles ID</a>
     </div>
 
 </body>
